@@ -1,0 +1,28 @@
+
+
+<ion-header class="welcome_page">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Store Detials</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content >
+
+  <ion-list class="store_list"> 
+        <ion-item *ngFor="let itemslist of itemslist" > 
+          <img src={{itemslist.url}} width="50" height="50"/> 
+          <div class="store_name_details" >   
+           <h1 (click)="itemTapped($event, itemslist)">{{itemslist.storename}}</h1>
+           <p>{{itemslist.disc}}</p>
+           <a (click)="editdetails($event, itemslist)">Edit details</a>
+           
+          </div>    
+        </ion-item>
+      
+      </ion-list>
+
+</ion-content>

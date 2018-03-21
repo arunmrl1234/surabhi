@@ -1,0 +1,134 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.login {
+    img {
+        margin-top: 25%;
+        margin: 7% 0;
+    }
+    .scroll-content{
+        top:25%;
+    }
+}
+.button.button-positive {
+    background: #323E01 !important;
+    height: 50px;
+    color: #fff;
+    font-size: 1.3em;
+}
+.toolbar-background {
+    background: #323E01 !important;
+    color: #fff;
+}
+.toolbar-title  {
+    color: #fff;
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    background-color:transparent;
+    color: #fff;
+}
+.welcome_page {
+    .back-button {
+        display: none;
+    }
+    .bar-button-menutoggle-md {
+        display: block !important;
+    }
+}
+.store_list {
+    img {
+        float: left;
+    }
+    div.store_name_details {
+        float: left;
+        width: 82%;
+        padding-left: 5%;
+        h1 {
+            font-size: 15px;
+        }
+        a {
+            font-size: 11px;
+            text-decoration: none;
+            float: right;
+        }
+    }
+}
+.create_order_details {
+    padding: 4% 4%;
+}
+.tabs {
+  
+   .tabbar {
+       background: ccc;
+       a {
+           color: #000;
+           background: #f1f1f1;
+           border-right: 2px solid #ccc;
+           span {
+               font-size: 15px;
+               padding: 1%;
+           }
+       }
+   }
+   .tab-button {
+       min-height: 4.6rem;
+   }
+   .tab-button[aria-selected=true] {
+       color: #323E01 !important;
+       border-bottom: 2px solid #323E01;
+   }
+   
+} 
+.tabl_view {
+    .note_messgae {
+        
+        margin: 6% 3% 0 3%;
+    }
+    .grid {
+        margin: 3% 0;        
+    }
+    .row {
+        
+        border: 1px solid #ccc;
+        &.grid_header {
+            background: #ccc;
+            border: 1ox solid #000;
+            .col {
+                border-left: 1px solid #fff;
+                &.first-child {
+                    border: none;
+                }
+            }
+        }
+        .col{
+            padding: 4% 0;
+            border-left: 1px solid #ccc;
+            text-align: center;
+            &.first-child {
+                border: none;
+            }
+            .text-input {
+                margin: 0;
+                height: 30px;
+            }
+            span {
+                margin: 4% 0 0 0;
+                display: block;
+            }
+        }
+    }
+}
+   

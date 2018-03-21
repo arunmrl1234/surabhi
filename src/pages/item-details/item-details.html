@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle *ngIf="!selectedItem">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title *ngIf="selectedItem">{{selectedItem.storename}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div  class="create_order_details">
+      <ion-tabs tabsPlacement="top">
+          <ion-tab [root]="chatRoot" tabTitle="Order" ></ion-tab>
+          <ion-tab [root]="chatRoot2" tabTitle="Invoice" ></ion-tab>
+         </ion-tabs>
+    
+  </div>
+  
+</ion-content>

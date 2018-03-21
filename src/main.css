@@ -1,0 +1,81 @@
+.login img {
+  margin-top: 25%;
+  margin: 7% 0; }
+.login .scroll-content {
+  top: 25%; }
+
+.button.button-positive {
+  background: #323E01 !important;
+  height: 50px;
+  color: #fff;
+  font-size: 1.3em; }
+
+.toolbar-background {
+  background: #323E01 !important;
+  color: #fff; }
+
+.toolbar-title {
+  color: #fff; }
+
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+  background-color: transparent;
+  color: #fff; }
+
+.welcome_page .back-button {
+  display: none; }
+.welcome_page .bar-button-menutoggle-md {
+  display: block !important; }
+
+.store_list img {
+  float: left; }
+.store_list div.store_name_details {
+  float: left;
+  width: 82%;
+  padding-left: 5%; }
+  .store_list div.store_name_details h1 {
+    font-size: 15px; }
+  .store_list div.store_name_details a {
+    font-size: 11px;
+    text-decoration: none;
+    float: right; }
+
+.create_order_details {
+  padding: 4% 4%; }
+
+.tabs .tabbar {
+  background: ccc; }
+  .tabs .tabbar a {
+    color: #000;
+    background: #f1f1f1;
+    border-right: 2px solid #ccc; }
+    .tabs .tabbar a span {
+      font-size: 15px;
+      padding: 1%; }
+
+.tabl_view .note_messgae {
+  margin: 6% 3% 0 3%; }
+.tabl_view .grid {
+  margin: 3% 0; }
+.tabl_view .row {
+  border: 1px solid #ccc; }
+  .tabl_view .row.grid_header {
+    background: #ccc;
+    border: 1ox solid #000; }
+    .tabl_view .row.grid_header .col {
+      border-left: 1px solid #fff; }
+      .tabl_view .row.grid_header .col.first-child {
+        border: none; }
+  .tabl_view .row .col {
+    padding: 4% 0;
+    border-left: 1px solid #ccc;
+    text-align: center; }
+    .tabl_view .row .col.first-child {
+      border: none; }
+    .tabl_view .row .col .text-input {
+      margin: 0;
+      height: 30px; }
+    .tabl_view .row .col span {
+      margin: 4% 0 0 0;
+      display: block; }
+
+/*# sourceMappingURL=main.css.map */
