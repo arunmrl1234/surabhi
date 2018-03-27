@@ -51,6 +51,11 @@
     .tabs .tabbar a span {
       font-size: 15px;
       padding: 1%; }
+.tabs .tab-button {
+  min-height: 4.6rem; }
+.tabs .tab-button[aria-selected=true] {
+  color: #323E01 !important;
+  border-bottom: 2px solid #323E01; }
 
 .tabl_view .note_messgae {
   margin: 6% 3% 0 3%; }
@@ -66,16 +71,25 @@
       .tabl_view .row.grid_header .col.first-child {
         border: none; }
   .tabl_view .row .col {
-    padding: 4% 0;
     border-left: 1px solid #ccc;
     text-align: center; }
     .tabl_view .row .col.first-child {
       border: none; }
     .tabl_view .row .col .text-input {
       margin: 0;
-      height: 30px; }
+      height: 30px;
+      padding: 4% 0;
+      color: #000; }
+    .tabl_view .row .col .input-md.ng-invalid {
+      border: 1px solid red; }
     .tabl_view .row .col span {
       margin: 4% 0 0 0;
       display: block; }
+
+.iconictext {
+  height: 70px;
+  border: 1px solid #ccc;
+  width: 95%;
+  margin: 2% 2%; }
 
 /*# sourceMappingURL=main.css.map */

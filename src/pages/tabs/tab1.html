@@ -1,6 +1,9 @@
 
     <ion-content class="tabl_view">
             <p class="note_messgae">Please enter the order details</p>
+            
+            <form [formGroup]="Orederplc" >
+
         <ion-grid>
                 <ion-row class="grid_header">
                   <ion-col col-6>Category</ion-col>
@@ -8,22 +11,24 @@
                 </ion-row>
                 <ion-row>
                         <ion-col col-6><span>Jasmine</span></ion-col>
-                        <ion-col col-6><ion-input type="text" value=""></ion-input></ion-col>
+                        <ion-col col-6><ion-input type="text" value="" formControlName="val1"></ion-input></ion-col>
                 </ion-row>
                 <ion-row>
                         <ion-col col-6><span>Lilly</span></ion-col>
-                        <ion-col col-6><ion-input type="text" value=""></ion-input></ion-col>
+                        <ion-col col-6><ion-input type="text" value="" formControlName="val2"></ion-input></ion-col>
                 </ion-row>
                 <ion-row>
                         <ion-col col-6><span>Rose</span></ion-col>
-                        <ion-col col-6><ion-input type="text" value=""></ion-input></ion-col>
+                        <ion-col col-6><ion-input type="text" value="" formControlName="val3"></ion-input></ion-col>
                 </ion-row>
                 <ion-row>
                         <ion-col col-6><span>Rose 2 </span></ion-col>
-                        <ion-col col-6><ion-input type="text" value=""></ion-input></ion-col>
+                        <ion-col col-6><ion-input type="text" value="" formControlName="val4"></ion-input></ion-col>
                 </ion-row>
               </ion-grid>
-              <button class="button button-positive button-full" >
+              
+              <button class="button button-positive button-full" [disabled]="!Orederplc.valid" (click)="presentAlert()">
                         Place Order
                       </button>
+                </form>
     </ion-content>

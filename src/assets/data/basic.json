@@ -1,38 +1,53 @@
 {  
    "items":[  
       {  
-         "storename":"Indian store1",
-         "disc":"vienna",
+         "storename":"Aditi spice depot",
+         "disc":"Vienna",
          "url":"https://s3-media1.fl.yelpcdn.com/bphoto/cpXLVYP0_r7O7fTO9BRoYw/o.jpg"
       },
       {  
-         "storename":"Indian store2",
-         "disc":"loc 2",
+         "storename":"Aditi spice depot",
+         "disc":"Herndon",
          "url":"https://s3-media1.fl.yelpcdn.com/bphoto/cpXLVYP0_r7O7fTO9BRoYw/o.jpg"
       },
       {  
-         "storename":"Indian store3",
-         "disc":"loc 3",
+         "storename":"Indian spices",
+         "disc":"Fallschurch",
          "url":"https://s3-media1.fl.yelpcdn.com/bphoto/cpXLVYP0_r7O7fTO9BRoYw/o.jpg"
       },
       {  
-         "storename":"Indian store4",
-         "disc":"loc 3",
+         "storename":"Indian spices",
+         "disc":"Centreville",
          "url":"https://s3-media1.fl.yelpcdn.com/bphoto/cpXLVYP0_r7O7fTO9BRoYw/o.jpg"
       },
       {  
-         "storename":"Indian store5",
-         "disc":"loc 3",
+         "storename":"Priya spices",
+         "disc":"Ashburn",
          "url":"https://s3-media1.fl.yelpcdn.com/bphoto/cpXLVYP0_r7O7fTO9BRoYw/o.jpg"
       },
       {  
-         "storename":"Indian store3",
-         "disc":"loc 3",
+         "storename":"Indian Mart",
+         "disc":"Dulles",
          "url":"https://s3-media1.fl.yelpcdn.com/bphoto/cpXLVYP0_r7O7fTO9BRoYw/o.jpg"
       },
       {  
-         "storename":"Indian store6",
-         "disc":"loc 3",
+         "storename":"Indian Buzaar",
+         "disc":"Chantilly",
+         "url":"https://s3-media1.fl.yelpcdn.com/bphoto/cpXLVYP0_r7O7fTO9BRoYw/o.jpg"
+      },
+      {  
+         "storename":"Indian Buzaar",
+         "disc":"Sterling",
+         "url":"https://s3-media1.fl.yelpcdn.com/bphoto/cpXLVYP0_r7O7fTO9BRoYw/o.jpg"
+      },
+      {  
+         "storename":"Ganesh groceries",
+         "disc":"Ellicott city",
+         "url":"https://s3-media1.fl.yelpcdn.com/bphoto/cpXLVYP0_r7O7fTO9BRoYw/o.jpg"
+      },
+      {  
+         "storename":"Daily Spies",
+         "disc":"Fallschurch",
          "url":"https://s3-media1.fl.yelpcdn.com/bphoto/cpXLVYP0_r7O7fTO9BRoYw/o.jpg"
       }
    ]

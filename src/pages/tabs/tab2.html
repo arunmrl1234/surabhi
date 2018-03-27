@@ -2,6 +2,7 @@
 <ion-content tabTitle="Invoice" class="tabl_view">
   
                 <p class="note_messgae">Please enter the Invoice details</p>
+                <form [formGroup]="invoicePlc" >
             <ion-grid>
                     <ion-row class="grid_header">
                       <ion-col col-3>Category</ion-col>
@@ -11,32 +12,42 @@
                     </ion-row>
                     <ion-row>
                             <ion-col col-3><span>Jasmine</span></ion-col>
-                            <ion-col col-3><ion-input type="text" value=""></ion-input></ion-col>
-                            <ion-col col-3><ion-input type="text" value=""></ion-input></ion-col>
-                            <ion-col col-3><ion-input type="text" value=""></ion-input></ion-col>
+                            <ion-col col-3><ion-input type="text" value="" formControlName="inovice1"></ion-input></ion-col>
+                            <ion-col col-3><ion-input type="text" value="" formControlName="inovice2"></ion-input></ion-col>
+                            <ion-col col-3><ion-input type="text" value="" formControlName="inovice3"></ion-input></ion-col>
                     </ion-row>
                     <ion-row>
                             <ion-col col-3><span>Lilly</span></ion-col>
-                            <ion-col col-3><ion-input type="text" value=""></ion-input></ion-col>
-                            <ion-col col-3><ion-input type="text" value=""></ion-input></ion-col>
-                            <ion-col col-3><ion-input type="text" value=""></ion-input></ion-col>
+                            <ion-col col-3><ion-input type="text" value="" formControlName="inovice4"></ion-input></ion-col>
+                            <ion-col col-3><ion-input type="text" value="" formControlName="inovice5"></ion-input></ion-col>
+                            <ion-col col-3><ion-input type="text" value="" formControlName="inovice6"></ion-input></ion-col>
                     </ion-row>
                     <ion-row>
                             <ion-col col-3><span>Rose</span></ion-col>
-                            <ion-col col-3><ion-input type="text" value=""></ion-input></ion-col>
-                            <ion-col col-3><ion-input type="text" value=""></ion-input></ion-col>
-                            <ion-col col-3><ion-input type="text" value=""></ion-input></ion-col>
+                            <ion-col col-3><ion-input type="text" value="" formControlName="inovice7"></ion-input></ion-col>
+                            <ion-col col-3><ion-input type="text" value="" formControlName="inovice8"></ion-input></ion-col>
+                            <ion-col col-3><ion-input type="text" value="" formControlName="inovice9"></ion-input></ion-col>
                     </ion-row>
                     <ion-row>
                             <ion-col col-3><span>Rose 2 </span></ion-col>
-                            <ion-col col-3><ion-input type="text" value=""></ion-input></ion-col>
-                            <ion-col col-3><ion-input type="text" value=""></ion-input></ion-col>
-                            <ion-col col-3><ion-input type="text" value=""></ion-input></ion-col>
+                            <ion-col col-3><ion-input type="text" value="" formControlName="inovice10"></ion-input></ion-col>
+                            <ion-col col-3><ion-input type="text" value="" formControlName="inovice11"></ion-input></ion-col>
+                            <ion-col col-3><ion-input type="text" value="" formControlName="inovice12"></ion-input></ion-col>
                     </ion-row>
                   </ion-grid>
-                  <button class="button button-positive button-full" >
+                  <div class="title">Please draw your Signature</div>
+  <ion-row [ngClass]="{'drawing-active': isDrawing}">
+    <ion-col></ion-col>
+    <ion-col>
+      <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
+    </ion-col>
+    <ion-col></ion-col>
+ 
+  </ion-row>
+  
+<button class="button button-positive button-full" [disabled]="!invoicePlc.valid" (click)="presentAlert()">
                             Place Invoice
                           </button>
-
+</form>
         </ion-content>
         

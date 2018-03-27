@@ -2,6 +2,7 @@
 <ion-content tabTitle="Edit Invoice" class="tabl_view">
   
     <p class="note_messgae">Please enter the Invoice details</p>
+    <form [formGroup]="invoiceEdit" >
 <ion-grid>
         <ion-row class="grid_header">
           <ion-col col-3>Category</ion-col>
@@ -11,31 +12,32 @@
         </ion-row>
         <ion-row>
                 <ion-col col-3><span>Jasmine</span></ion-col>
-                <ion-col col-3><ion-input type="text" value="20"></ion-input></ion-col>
-                <ion-col col-3><ion-input type="text" value="12"></ion-input></ion-col>
-                <ion-col col-3><ion-input type="text" value="65"></ion-input></ion-col>
+                <ion-col col-3><ion-input type="text" value="20" formControlName="inovice1"></ion-input></ion-col>
+                <ion-col col-3><ion-input type="text" value="12" formControlName="inovice2"></ion-input></ion-col>
+                <ion-col col-3><ion-input type="text" value="65" formControlName="inovice3"></ion-input></ion-col>
         </ion-row>
         <ion-row>
                 <ion-col col-3><span>Lilly</span></ion-col>
-                <ion-col col-3><ion-input type="text" value="2"></ion-input></ion-col>
-                <ion-col col-3><ion-input type="text" value="4"></ion-input></ion-col>
-                <ion-col col-3><ion-input type="text" value="6"></ion-input></ion-col>
+                <ion-col col-3><ion-input type="text" value="2" formControlName="inovice4"></ion-input></ion-col>
+                <ion-col col-3><ion-input type="text" value="4" formControlName="inovice5"></ion-input></ion-col>
+                <ion-col col-3><ion-input type="text" value="6" formControlName="inovice6"></ion-input></ion-col>
         </ion-row>
         <ion-row>
                 <ion-col col-3><span>Rose</span></ion-col>
-                <ion-col col-3><ion-input type="text" value="6"></ion-input></ion-col>
-                <ion-col col-3><ion-input type="text" value="5"></ion-input></ion-col>
-                <ion-col col-3><ion-input type="text" value="6"></ion-input></ion-col>
+                <ion-col col-3><ion-input type="text" value="6" formControlName="inovice7"></ion-input></ion-col>
+                <ion-col col-3><ion-input type="text" value="5" formControlName="inovice8"></ion-input></ion-col>
+                <ion-col col-3><ion-input type="text" value="6" formControlName="inovice9"></ion-input></ion-col>
         </ion-row>
         <ion-row>
                 <ion-col col-3><span>Rose 2 </span></ion-col>
-                <ion-col col-3><ion-input type="text" value="6"></ion-input></ion-col>
-                <ion-col col-3><ion-input type="text" value="8"></ion-input></ion-col>
-                <ion-col col-3><ion-input type="text" value="6"></ion-input></ion-col>
+                <ion-col col-3><ion-input type="text" value="6" formControlName="inovice10"></ion-input></ion-col>
+                <ion-col col-3><ion-input type="text" value="8" formControlName="inovice11"></ion-input></ion-col>
+                <ion-col col-3><ion-input type="text" value="6" formControlName="inovice12"></ion-input></ion-col>
         </ion-row>
       </ion-grid>
-      <button class="button button-positive button-full" >
+      <ion-textarea #msgInput rows="1" maxLength="500" class="iconictext" placeholder="Type the note messgae"></ion-textarea>
+      <button class="button button-positive button-full" [disabled]="!invoiceEdit.valid" (click)="presentAlert()">
                 Edit Invoice
               </button>
-
+        </form>
 </ion-content>

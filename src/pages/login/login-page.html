@@ -1,11 +1,20 @@
 
       <ion-content class="login">       
         <h3 text-center>
-        <img alt="logo" height="70"   src="../assets/imgs/logo.png" > 
+        <img alt="logo" height="70"   src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-1/p200x200/20770309_347609395667175_7273016449680014664_n.jpg?_nc_cat=0&oh=769b94a82c7c2e05a8af68b742263284&oe=5B28524C" > 
       </h3>
-      <button class="button button-positive button-full" (click)="itemTapped($event)">
+     <button class="button button-positive button-full" (click)="itemTapped($event)">
           Login
         </button>
-        
+        <div *ngIf="isLoggedIn; else facebookLogin">
+          
+    
+  </div>
+  <ng-template #facebookLogin>
+    <button ion-button icon-right (click)="login()" style="width:100%">
+      Login with
+      <ion-icon name="logo-facebook"></ion-icon>
+    </button>
+  </ng-template>
       </ion-content>
       
