@@ -13,14 +13,14 @@
 <ion-content >
 
   <ion-list class="store_list"> 
-        <ion-item *ngFor="let itemslist of itemslist" > 
-          <img src={{itemslist.url}} width="50" height="50"/> 
+        <ion-item *ngFor="let item of items" > 
+          <img src="http://www.dailyspices.com/images/loyalty_icon.png" width="50" height="50"/> 
           <div class="store_name_details" >   
-           <h1 (click)="itemTapped($event, itemslist)">{{itemslist.storename}}</h1>
-           <p>{{itemslist.disc}}</p>
-           <a (click)="editdetails($event, itemslist)">Edit details</a>
+           <h1 (click)="itemTapped($event, item)">{{item.Store_Name}}</h1>
+           <p>{{item.Store_Addr}}</p>
+           <a (click)="editdetails($event, item)">Edit details</a></div>
            
-          </div>    
+             
         </ion-item>
       
       </ion-list>

@@ -17,25 +17,26 @@ export class HelloIonicPage {
 
     this.items = navParams.get('item');
     
-    this.http.get("assets/data/basic.json").subscribe (data => {
+    this.http.get("http://localhost/api/api.php").subscribe (data => {
             console.log(data)
-    this.items = data.json(); 
-    this.itemslist = this.items.items;   
-    console.log(this.itemslist);
+  
+    this.items = data.json().item;
+    //this.itemslist = this.items.item;    
+    console.log("<<>>"+this.items);
+   // return(this.itemslist);
     }, error => {
       console.log(error);
     })
 
   }
-  itemTapped ($event, itemslist) {
+  itemTapped ($event, item) {
     this.navCtrl.push(ItemDetailsPage, {
-        item: itemslist
+        item: item
       });
   }
-  editdetails ($event, itemslist) {
+  editdetails ($event, item) {
     this.navCtrl.push(EditDetailsPage, {
-      item: itemslist
-    });
+      item: item    });
   }
 
 }

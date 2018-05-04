@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "5.0.3",
     "@ionic-native/core": "4.4.0",
     "@ionic-native/facebook": "^4.6.0",
+    "@ionic-native/http": "^4.7.0",
     "@ionic-native/splash-screen": "4.4.0",
     "@ionic-native/status-bar": "4.4.0",
     "@ionic/pro": "1.0.20",
@@ -29,8 +30,10 @@
     "angular2-signaturepad": "^2.8.0",
     "cordova-android": "6.3.0",
     "cordova-browser": "5.0.3",
+    "cordova-plugin-advanced-http": "^1.11.1",
     "cordova-plugin-device": "^2.0.1",
     "cordova-plugin-facebook4": "^1.9.1",
+    "cordova-plugin-file": "^6.0.1",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.1.16",
     "cordova-plugin-splashscreen": "^5.0.2",
@@ -58,7 +61,8 @@
       "cordova-plugin-facebook4": {
         "APP_ID": "2027991114107734",
         "APP_NAME": "IonicOauth"
-      }
+      },
+      "cordova-plugin-advanced-http": {}
     },
     "platforms": [
       "android",
